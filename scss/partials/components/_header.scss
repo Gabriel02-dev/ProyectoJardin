@@ -1,0 +1,25 @@
+
+.bg-navbar {
+    background-color: #FFC4FF;
+    border-bottom: 1px solid black;
+
+    .navbar-flex {
+    justify-content: end;
+
+        ul {
+            align-items: center;  
+            gap: 20px;  
+
+            .navbar-link {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }   
+}
+
+@media (max-width: 450px) {
+    ul {
+        text-align: left;
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/partials/base/_tipografia.scss","../scss/partials/base/_reseat.scss","../scss/partials/components/_body.scss","../scss/partials/components/_header.scss"],"names":[],"mappings":"AAAQ;ACAR;EACI;EACA;;;ACFJ;EACI;EACA;;;ACDJ;EACI;EACA;;AAEA;EACA;;AAEI;EACI;EACA;;AAEA;EACI;EACA;;;AAMhB;EACI;IACI","file":"style.css"}

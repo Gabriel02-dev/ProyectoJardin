@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Chango", sans-serif;
+  background-color: #7F0DD1;
+}
+
+.bg-navbar {
+  background-color: #FFC4FF;
+  border-bottom: 1px solid black;
+}
+.bg-navbar .navbar-flex {
+  justify-content: end;
+}
+.bg-navbar .navbar-flex ul {
+  align-items: center;
+  gap: 20px;
+}
+.bg-navbar .navbar-flex ul .navbar-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 450px) {
+  ul {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

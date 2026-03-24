@@ -6,28 +6,40 @@
 
 body {
   font-family: "Chango", sans-serif;
-  background-color: #7F0DD1;
+  background-color: #B463FF;
 }
 
 .bg-navbar {
   background-color: #FFC4FF;
   border-bottom: 1px solid black;
 }
+.bg-navbar .boton {
+  padding: 0;
+  border-radius: 0px;
+  box-shadow: none;
+}
 .bg-navbar .navbar-flex {
   justify-content: end;
+  padding: 5px;
 }
 .bg-navbar .navbar-flex ul {
-  align-items: center;
   gap: 20px;
 }
 .bg-navbar .navbar-flex ul .navbar-link {
   text-decoration: none;
   color: black;
+  padding: 8px 20px;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: #B463FF;
+}
+.bg-navbar .navbar-flex ul .navbar-link:hover {
+  background-color: #940AFF;
 }
 
-@media (max-width: 450px) {
-  ul {
-    text-align: left;
+@media (max-width: 991px) {
+  .bg-navbar .navbar-flex ul .navbar-link {
+    padding: 3px;
   }
 }
 

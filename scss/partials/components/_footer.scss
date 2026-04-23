@@ -25,3 +25,22 @@
 .grid-3 {
     grid-area: grid-3;
 }
+
+@media (max-width: 450px) {
+    .footer-personalizado {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 130px 30px;
+        grid-template-areas: 
+        "grid-1"
+        "grid-2"
+        "grid-3";
+        font-size: 13px;
+
+        padding: 30px 10px;
+        gap: 20px;
+
+        .grid-1 {
+            margin: 0;
+        }
+    }
+}

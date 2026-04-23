@@ -89,6 +89,25 @@ body {
   text-align: center;
 }
 
+@media (max-width: 450px) {
+  .section1-flex {
+    margin: 10px;
+    padding-bottom: 50px;
+  }
+  .section1-flex button {
+    margin: 0;
+  }
+  .section2-flex {
+    margin-bottom: 60px;
+  }
+  .section2-flex .div-flex {
+    width: 95%;
+    text-align: center;
+  }
+  .section2-flex .div-flex p {
+    font-size: 20px;
+  }
+}
 .footer-personalizado {
   text-align: center;
   border-top: 1px solid black;
@@ -112,6 +131,20 @@ body {
 
 .grid-3 {
   grid-area: grid-3;
+}
+
+@media (max-width: 450px) {
+  .footer-personalizado {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 130px 30px;
+    grid-template-areas: "grid-1" "grid-2" "grid-3";
+    font-size: 13px;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+  .footer-personalizado .grid-1 {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

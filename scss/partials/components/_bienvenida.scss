@@ -48,3 +48,32 @@
     flex-direction: column;
     text-align: center;
 }
+
+@media (max-width: 450px) {
+    .section1-flex {
+        margin: 10px;
+        padding-bottom: 50px;
+            
+        button {
+            margin: 0;
+            
+        }
+    }
+
+    .section2-flex {
+        margin-bottom: 60px;
+
+        .div-flex {
+            width: 95%;
+            text-align: center;
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .section3-carousel {
+        // width: 500px;
+    }
+}

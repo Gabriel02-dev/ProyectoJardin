@@ -42,5 +42,76 @@ body {
     padding: 3px;
   }
 }
+.section1-flex {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section1-flex h1 {
+  text-align: center;
+}
+.section1-flex button {
+  padding: 10px;
+  margin: 0 400px;
+}
+.section1-flex button a {
+  text-decoration: none;
+  color: black;
+}
+
+.section2-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.section2-flex .div-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color: white;
+}
+.section2-flex .div-flex p {
+  padding: 20px;
+}
+
+.section3-carousel {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-personalizado {
+  text-align: center;
+  border-top: 1px solid black;
+  background-color: #FFC4FF;
+  padding-bottom: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 40px;
+  grid-template-areas: "grid-1 grid-2" "grid-3 grid-3";
+  gap: 10px;
+}
+
+.grid-1 {
+  margin: 0 100px;
+  grid-area: grid-1;
+}
+
+.grid-2 {
+  grid-area: grid-2;
+}
+
+.grid-3 {
+  grid-area: grid-3;
+}
 
 /*# sourceMappingURL=style.css.map */

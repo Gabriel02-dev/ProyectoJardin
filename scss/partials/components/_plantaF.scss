@@ -1,0 +1,24 @@
+.section-dir {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.h2-estilo {
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+.section-doc {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 35px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 450px) {
+    .h2-estilo {
+        margin: 50px 0 40px 0;
+    }
+}

@@ -1,0 +1,123 @@
+.container-contacto {
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    .titulo-contacto {
+        font-weight: bold;
+        color: black;
+    }
+
+    .sub-contacto {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    // Estilo base para los cuadros - La altura simétrica se la da el row de Bootstrap + h-100
+    .caja-contacto-info {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 30px;
+
+        h2 {
+            font-size: 1.4rem;
+            color: #B463FF;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    }
+
+    // Listas de información institucional
+    .info-lista {
+        li {
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; // Clave para evitar desbordes en textos continuos
+            gap: 12px;
+
+            span {
+                font-size: 1.2rem;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    // Fuerza que los links o correos muy largos no superen el ancho máximo disponible
+    .break-word {
+        word-break: break-all;
+        max-width: 100%;
+        display: inline-block;
+    }
+
+    // Contenedor responsivo para el mapa
+    .contenedor-iframe {
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        
+        iframe {
+            display: block;
+        }
+    }
+
+    // Estilos del Acordeón (Preguntas Frecuentes)
+    .accordion-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        
+        .accordion-button {
+            padding: 15px 0;
+            font-weight: 600;
+            color: black;
+            background-color: transparent;
+            box-shadow: none;
+
+            &:not(.collapsed) {
+                color: #B463FF;
+            }
+        }
+
+        .accordion-body {
+            padding: 10px 0 20px 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+    }
+}
+
+// Media Query para Celulares (Universal hasta 450px)
+@media (max-width: 450px) {
+    .container-contacto {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .caja-contacto-info {
+            padding: 20px;
+            border-radius: 20px;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .info-lista li {
+            font-size: 0.95rem;
+            display: block; // Quitamos flexbox temporalmente en móviles para asegurar el quiebre de renglón del mail
+            margin-bottom: 15px;
+
+            span {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+
+        .break-word {
+            display: block;
+            margin-top: 4px; // Le da una separación linda si el mail cae abajo
+        }
+    }
+}

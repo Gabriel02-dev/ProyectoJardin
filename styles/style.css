@@ -267,5 +267,95 @@ body {
     margin-top: 4px;
   }
 }
+.container-salas {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.container-salas .titulo-salas {
+  font-weight: bold;
+  color: black;
+}
+.container-salas .tarjeta-sala {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.container-salas .tarjeta-sala:hover {
+  transform: translateY(-5px);
+}
+.container-salas .tarjeta-sala .contenedor-foto-sala {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-bottom: 2px solid black;
+}
+.container-salas .tarjeta-sala .contenedor-foto-sala img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-salas .tarjeta-sala .contenedor-foto-sala .badge-edad {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #B463FF;
+  color: white;
+  font-weight: bold;
+  padding: 6px 15px;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+.container-salas .tarjeta-sala .contenido-sala {
+  padding: 25px;
+}
+.container-salas .tarjeta-sala .contenido-sala h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 12px;
+}
+.container-salas .tarjeta-sala .contenido-sala p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+.container-salas .tarjeta-sala .contenido-sala .caracteristicas-sala {
+  margin-top: 20px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-top: 15px;
+}
+.container-salas .tarjeta-sala .contenido-sala .caracteristicas-sala li {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+@media (max-width: 450px) {
+  .container-salas {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-salas .tarjeta-sala {
+    border-radius: 20px;
+  }
+  .container-salas .tarjeta-sala .contenedor-foto-sala {
+    height: 180px;
+  }
+  .container-salas .tarjeta-sala .contenido-sala {
+    padding: 20px;
+  }
+  .container-salas .tarjeta-sala .contenido-sala h2 {
+    font-size: 1.3rem;
+  }
+  .container-salas .tarjeta-sala .contenido-sala p {
+    font-size: 0.95rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -47,39 +47,37 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
+}
+.section1-flex .img-bienvenida {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
 }
 .section1-flex h1 {
   text-align: center;
 }
-.section1-flex button {
-  padding: 10px;
-  margin: 0 400px;
-}
-.section1-flex button a {
-  text-decoration: none;
-  color: black;
-}
-
-.section2-flex {
+.section1-flex .contenedor-botones {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 15px;
   align-items: center;
-  margin-bottom: 100px;
+  width: 100%;
 }
-.section2-flex .div-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 50px;
-  width: 70%;
+.section1-flex .contenedor-botones button {
+  padding: 10px 30px;
+  width: 100%;
+  max-width: 350px;
   border: 2px solid black;
-  border-radius: 100px;
-  background-color: white;
+  border-radius: 50px;
 }
-.section2-flex .div-flex p {
-  padding: 20px;
+.section1-flex .contenedor-botones button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
 }
 
 .section3-carousel {
@@ -88,24 +86,94 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.section3-carousel h1 {
+  margin-bottom: 30px;
+}
+
+.container-proyectos {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.container-proyectos .titulo-seccion-proyectos {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 12px 25px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: black;
+}
+.container-proyectos .sub-proyectos {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+.container-proyectos .tarjeta-proyecto {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.container-proyectos .tarjeta-proyecto:hover {
+  transform: translateY(-5px);
+}
+.container-proyectos .tarjeta-proyecto .icono-proyecto {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.container-proyectos .tarjeta-proyecto h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #B463FF;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.container-proyectos .tarjeta-proyecto p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+}
 
 @media (max-width: 450px) {
   .section1-flex {
     margin: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
-  .section1-flex button {
-    margin: 0;
+  .section1-flex .img-bienvenida {
+    max-width: 280px;
   }
-  .section2-flex {
-    margin-bottom: 60px;
+  .section1-flex .contenedor-botones button {
+    max-width: 100%;
   }
-  .section2-flex .div-flex {
-    width: 95%;
+  .container-proyectos {
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-proyectos .titulo-seccion-proyectos {
+    font-size: 1.2rem;
+    width: 100%;
     text-align: center;
+    padding: 10px;
   }
-  .section2-flex .div-flex p {
-    font-size: 10px;
+  .container-proyectos .tarjeta-proyecto {
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+  .container-proyectos .tarjeta-proyecto h3 {
+    font-size: 1.1rem;
+  }
+  .container-proyectos .tarjeta-proyecto p {
+    font-size: 0.9rem;
   }
 }
 .footer-personalizado {
@@ -146,28 +214,105 @@ body {
     margin: 0;
   }
 }
-.section-dir {
+.container-planta {
   margin-top: 60px;
-  text-align: center;
+  margin-bottom: 80px;
 }
-
-.h2-estilo {
-  text-align: center;
-  margin: 100px 0 50px 0;
+.container-planta .titulo-planta {
+  font-weight: bold;
+  color: black;
 }
-
-.section-doc {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  gap: 35px;
-  margin-bottom: 100px;
+.container-planta .sub-planta {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container-planta .titulo-cargo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 12px 25px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: black;
+}
+.container-planta .tarjeta-personal {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+.container-planta .tarjeta-personal:hover {
+  transform: translateY(-5px);
+}
+.container-planta .tarjeta-personal .foto-personal {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border: 2px solid black;
+}
+.container-planta .tarjeta-personal h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 8px;
+}
+.container-planta .tarjeta-personal .cargo {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+.container-planta .tarjeta-personal.b-directivo {
+  border-top: 6px solid #B463FF;
+}
+.container-planta .tarjeta-personal.b-docente {
+  border-top: 6px solid #2A9D8F;
+}
+.container-planta .tarjeta-personal.b-especial {
+  border-top: 6px solid #FFB703;
+}
+.container-planta .tarjeta-personal.b-auxiliar {
+  border-top: 6px solid #E63946;
 }
 
 @media (max-width: 450px) {
-  .h2-estilo {
-    margin: 50px 0 40px 0;
+  .container-planta {
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-planta .titulo-cargo {
+    font-size: 1.15rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .container-planta .tarjeta-personal {
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+  .container-planta .tarjeta-personal .foto-personal {
+    width: 110px;
+    height: 110px;
+  }
+  .container-planta .tarjeta-personal h3 {
+    font-size: 1.15rem;
+  }
+  .container-planta .tarjeta-personal .cargo {
+    font-size: 0.85rem;
   }
 }
 .container-contacto {
@@ -275,6 +420,31 @@ body {
   font-weight: bold;
   color: black;
 }
+.container-salas .sub-salas {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container-salas .titulo-grupo-sala {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.container-salas .titulo-grupo-sala.color-rojo {
+  color: #E63946;
+}
+.container-salas .titulo-grupo-sala.color-amarillo {
+  color: #FFB703;
+}
+.container-salas .titulo-grupo-sala.color-verde {
+  color: #2A9D8F;
+}
 .container-salas .tarjeta-sala {
   background-color: white;
   border: 2px solid black;
@@ -283,78 +453,125 @@ body {
   transition: transform 0.3s ease;
 }
 .container-salas .tarjeta-sala:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+}
+.container-salas .tarjeta-sala.b-rojo {
+  border-color: #E63946;
+}
+.container-salas .tarjeta-sala.b-amarillo {
+  border-color: #FFB703;
+}
+.container-salas .tarjeta-sala.b-verde {
+  border-color: #2A9D8F;
 }
 .container-salas .tarjeta-sala .contenedor-foto-sala {
   position: relative;
   width: 100%;
   height: 200px;
-  border-bottom: 2px solid black;
 }
 .container-salas .tarjeta-sala .contenedor-foto-sala img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.container-salas .tarjeta-sala .contenedor-foto-sala .badge-edad {
+.container-salas .tarjeta-sala .contenedor-foto-sala .badge-sala {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background-color: #B463FF;
   color: white;
   font-weight: bold;
-  padding: 6px 15px;
+  padding: 5px 12px;
   border: 2px solid black;
   border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+.container-salas .tarjeta-sala .contenedor-foto-sala .badge-sala.bg-rojo {
+  background-color: #E63946;
+}
+.container-salas .tarjeta-sala .contenedor-foto-sala .badge-sala.bg-amarillo {
+  background-color: #FFB703;
+}
+.container-salas .tarjeta-sala .contenedor-foto-sala .badge-sala.bg-verde {
+  background-color: #2A9D8F;
 }
 .container-salas .tarjeta-sala .contenido-sala {
-  padding: 25px;
+  padding: 20px;
 }
-.container-salas .tarjeta-sala .contenido-sala h2 {
-  font-size: 1.5rem;
+.container-salas .tarjeta-sala .contenido-sala h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.container-salas .tarjeta-sala .contenido-sala .turno {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+.container-salas .caja-descripciones-final {
+  background-color: #f9f9f9;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 35px;
+}
+.container-salas .caja-descripciones-final h2 {
+  font-size: 1.6rem;
   font-weight: bold;
   color: black;
-  margin-bottom: 12px;
+  text-align: center;
+  margin-bottom: 25px;
 }
-.container-salas .tarjeta-sala .contenido-sala p {
-  font-size: 1rem;
+.container-salas .caja-descripciones-final .bloque-desc {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 6px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+}
+.container-salas .caja-descripciones-final .bloque-desc.b-rojo-top {
+  border-top-color: #E63946;
+}
+.container-salas .caja-descripciones-final .bloque-desc.b-amarillo-top {
+  border-top-color: #FFB703;
+}
+.container-salas .caja-descripciones-final .bloque-desc.b-verde-top {
+  border-top-color: #2A9D8F;
+}
+.container-salas .caja-descripciones-final .bloque-desc h4 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container-salas .caja-descripciones-final .bloque-desc p {
+  font-size: 0.95rem;
   color: #444;
   line-height: 1.5;
-}
-.container-salas .tarjeta-sala .contenido-sala .caracteristicas-sala {
-  margin-top: 20px;
-  border-top: 1px dashed rgba(0, 0, 0, 0.2);
-  padding-top: 15px;
-}
-.container-salas .tarjeta-sala .contenido-sala .caracteristicas-sala li {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #555;
+  margin: 0;
 }
 
 @media (max-width: 450px) {
   .container-salas {
     margin-top: 40px;
-    margin-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .container-salas .titulo-grupo-sala {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 12px 15px;
+    margin-bottom: 20px;
   }
   .container-salas .tarjeta-sala {
     border-radius: 20px;
   }
   .container-salas .tarjeta-sala .contenedor-foto-sala {
-    height: 180px;
+    height: 160px;
   }
-  .container-salas .tarjeta-sala .contenido-sala {
+  .container-salas .caja-descripciones-final {
     padding: 20px;
   }
-  .container-salas .tarjeta-sala .contenido-sala h2 {
+  .container-salas .caja-descripciones-final h2 {
     font-size: 1.3rem;
-  }
-  .container-salas .tarjeta-sala .contenido-sala p {
-    font-size: 0.95rem;
   }
 }
 

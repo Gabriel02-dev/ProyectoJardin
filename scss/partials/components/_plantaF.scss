@@ -1,24 +1,112 @@
-.section-dir {
+.container-planta {
     margin-top: 60px;
-    text-align: center;
+    margin-bottom: 80px;
+
+    .titulo-planta {
+        font-weight: bold;
+        color: black;
+    }
+
+    .sub-planta {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    // Estilo unificado para los h2 decorativos (Fondo blanco legible)
+    .titulo-cargo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 12px 25px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); // Centra el bloque exacto del título
+        
+        background-color: rgba(255, 255, 255, 0.95);
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        color: black;
+    }
+
+    // Estilo Base de las Tarjetas de Personal
+    .tarjeta-personal {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 30px 20px;
+        width: 100%;
+        max-width: 320px; // Evita que se deformen y ensanchen demasiado en PC
+        margin: 0 auto;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .foto-personal {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 8px;
+        }
+
+        .cargo {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #555;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        // Colores temáticos en bordes superiores para dar dinamismo
+        &.b-directivo { border-top: 6px solid #B463FF; } // Violeta institucional
+        &.b-docente { border-top: 6px solid #2A9D8F; }   // Verde pedagógico
+        &.b-especial { border-top: 6px solid #FFB703; }  // Amarillo
+        &.b-auxiliar { border-top: 6px solid #E63946; }  // Rojo
+    }
 }
 
-.h2-estilo {
-    text-align: center;
-    margin: 100px 0 50px 0;
-}
-
-.section-doc {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 35px;
-    margin-bottom: 100px;
-}
-
+// Media Query para Móviles de hasta 450px
 @media (max-width: 450px) {
-    .h2-estilo {
-        margin: 50px 0 40px 0;
+    .container-planta {
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .titulo-cargo {
+            font-size: 1.15rem;
+            width: 100%; // Ocupa todo el ancho en celulares
+            text-align: center;
+            padding: 10px;
+        }
+
+        .tarjeta-personal {
+            padding: 20px 15px;
+            border-radius: 20px;
+
+            .foto-personal {
+                width: 110px;
+                height: 110px;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            .cargo {
+                font-size: 0.85rem;
+            }
+        }
     }
 }

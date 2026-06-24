@@ -50,6 +50,13 @@
     h1 {
         margin-bottom: 30px;
     }
+
+    // Reglas para unificar el tamaño de las fotos
+    .img-carousel {
+        height: 400px;         // Altura fija perfecta para pantallas de PC
+        object-fit: cover;     // Recorta y encuadra la imagen sin deformarla
+        object-position: center; // Mantiene el centro de la foto siempre visible
+    }
 }
 
 // ESTILOS DE LA SECCIÓN DE PROYECTOS
@@ -126,6 +133,12 @@
             
         .contenedor-botones button {
             max-width: 100%;
+        }
+    }
+
+    .section3-carousel {
+        .img-carousel {
+            height: 220px;     // Altura más chica y proporcional para celulares
         }
     }
 

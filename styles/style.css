@@ -13,6 +13,10 @@ body {
   background-color: #FFC4FF;
   border-bottom: 1px solid black;
 }
+.bg-navbar img {
+  width: 50px;
+  mix-blend-mode: multiply;
+}
 .bg-navbar .boton {
   padding: 0;
   border-radius: 0px;
@@ -89,6 +93,11 @@ body {
 .section3-carousel h1 {
   margin-bottom: 30px;
 }
+.section3-carousel .img-carousel {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
 
 .container-proyectos {
   margin-top: 80px;
@@ -153,6 +162,9 @@ body {
   }
   .section1-flex .contenedor-botones button {
     max-width: 100%;
+  }
+  .section3-carousel .img-carousel {
+    height: 220px;
   }
   .container-proyectos {
     margin-top: 50px;

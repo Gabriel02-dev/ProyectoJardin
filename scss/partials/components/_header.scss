@@ -3,6 +3,11 @@
     background-color: #FFC4FF;
     border-bottom: 1px solid black;
 
+    img {
+        width: 50px;
+        mix-blend-mode: multiply;
+    }
+
     .boton {
         padding: 0;
         border-radius: 0px;
